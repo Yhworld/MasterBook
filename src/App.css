@@ -18,3 +18,56 @@ ul.nav {
     gap: 150px;
     justify-content: center;
 }
+
+.header {
+    display: flex;
+    height: 800px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.headerImage img {
+    width: 800px;
+}
+
+.headertext {
+    font-family: "Playfair Display";
+    font-size: 72px;
+    line-height: 1.4;
+    margin-top: 10%;
+}
+
+p.hero-paragraph {
+    font-size: 28px;
+    color: #464040;
+    padding-top: 30px;
+}
+
+input[type="text"] {
+    padding: 20px 304px 20px 30px;
+    border-radius: 30px;
+    margin-top: 60px;
+}
+
+p.quotes {
+    font-size: 28px;
+    padding-top: 40px;
+    font-style: italic;
+}
+input[type="text"] {
+    padding: 20px 304px 20px 30px;
+    border-radius: 30px;
+    margin-top: 60px;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-right: none;
+}
+
+button.search {
+    padding: 20px 20px 20px 20px;
+    border-radius: 30px;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-left: none;
+    background: transparent;
+}
