@@ -80,16 +80,35 @@ button.search {
     background: transparent;
     font-size: 18px;
 }
-button.start {
+.start {
     padding: 15px 40px 15px 40px;
     border-radius: 10px;
     font-size: 18px;
     background: #F4A261;
+    color: inherit;
     border: none;
+    text-decoration: none;
 }
+
 .search-page {
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 100vh;
+    padding-top: 40px;
+    flex-direction: column;
+}
+.bookImage {
+    display: flex;
+    padding-top: 200px;
+    justify-content: center;
+    flex: 1 0 26%;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.library {
+    flex: 28.33% 1;
+    flex-wrap: wrap;
+    text-align: center;
+    line-height: 1.8;
 }
