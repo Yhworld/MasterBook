@@ -1,5 +1,6 @@
 import React from 'react'
 import style from '../App.css'
+import {Link} from "react-router-dom"
 let headerPic = require("../Woman reading (1).gif")
 
 
@@ -22,7 +23,7 @@ const Header = () => {
            <sub>― Neil Gaiman, Coraline </sub>
            </p>
             <div className='search-box'>
-            <button className='start'>Lets Explore</button>
+            <Link to="/search" className='start'>Let's Explore</Link>
             </div>
             <br />
         </div>
