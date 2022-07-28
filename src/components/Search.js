@@ -1,25 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { BiSearch }  from "react-icons/bi";
 
-const Search = () => {
-  const [book, setBooks] = useState("")
-  const [result, setResult] = useState([])
-  const [apiKey, setApiKey] = useState("AIzaSyDD9tmSWYx1Kky4x0-REa5sM5KnEL5j6iw")
+const Search = ({handleChange, handleSubmit, result}) => {
 
-  function handleChange(event) {
-    const book = event.target.value
-    setBooks(book)
-
-  }
-  function handleSubmit(e) {
-    e.preventDefault()
-    fetch("https://www.googleapis.com/books/v1/volumes?q="+book+"&key="+apiKey+"&maxResults=10")
-    .then(r => r.json())
-    .then((data) => {
-      console.log(data.items);
-      setResult(data.items);
-    })
-  }
   return (
   <div className='search-page'>
     <div className='searchText'>
@@ -32,7 +15,15 @@ const Search = () => {
 
     <div className='bookImage'>
     {result.map(book => (
+      <div className='library'>
+        
       <img src={book.volumeInfo.imageLinks.thumbnail} alt={book.title}/>
+      <div>
+        <h2 className='bookText'>{book.volumeInfo.title}</h2>
+        <p>Author : {book.volumeInfo.authors}</p>
+        <p>Ratings : {book.volumeInfo.averageRating} /10 </p>
+      </div>
+    </div>
     ))}
     </div>
   </div>
