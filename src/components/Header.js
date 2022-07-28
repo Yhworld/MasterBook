@@ -1,17 +1,16 @@
 import React from 'react'
 import style from '../App.css'
-import { BsSearch } from "react-icons/bs";
 let headerPic = require("../Woman reading (1).gif")
 
 
-export const Header = () => {
+const Header = () => {
   return (
     <div className='header' style={style}>
         <div className='headertext'>
             <p>
                 Books of 
                 <br />
-                all kinds of genres
+                all kinds of <span>genres</span>
             </p>
             <p className='quotes'>“Fairy tales are more than true: not because
                 <br />
@@ -22,10 +21,9 @@ export const Header = () => {
                  can be beaten.”
            <sub>― Neil Gaiman, Coraline </sub>
            </p>
-            <form className='search-bar'>
-            <input type="text" placeholder='Enter the desired Book title' ></input>
-            <button className='search'><BsSearch/></button>
-            </form>
+            <div className='search-box'>
+            <button className='start'>Lets Explore</button>
+            </div>
             <br />
         </div>
     <div className='headerImage'>
@@ -34,3 +32,4 @@ export const Header = () => {
     </div>
   )
 }
+export default Header
