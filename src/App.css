@@ -127,7 +127,7 @@ a.view {
 
 button.openModalBtn {
     padding: 10px 30px 10px 30px;
-    background: bisque;
+    background: coral;
     border: none;
     border-radius: 7px;
 }
@@ -145,25 +145,28 @@ button.openModalBtn {
     align-items: center;
     justify-content: center;
 }
-.overlay-inner{
-    background: white;
+
+.overlay-inner {
+    background: lightyellow;
     width: 700px;
-    height: 550px;
+    height: 850px;
     padding: 1.5rem;
     position: relative;
     box-sizing: border-box;
     overflow: hidden;
     font-size: 1.3rem;
 }
-.overlay-inner .close{
+
+.overlay-inner .close {
     position: absolute;
-    top:1rem;
+    top: 1rem;
     right: 1rem;
     outline: none;
     border: none;
-    font-size: 17px;
+    font-size: 28px;
     background-color: transparent;
 }
+
 .overlay-inner .inner-box{
     margin-top: 30px;
     display: flex;
@@ -179,21 +182,22 @@ button.openModalBtn {
     color: green;
 }
 .overlay-inner .inner-box h4{
-    color: blue;
+    color: black;
 }
-.overlay-inner .inner-box button{
+.overlay-inner .inner-box button {
     outline: none;
     border: none;
     width: 100px;
     border-radius: 5px;
-    background-color: #24a0ed;
-    color: white;
+    background-color: burlywood;
+    color: #000;
     font-weight: bold;
-    padding: 0.3rem 0.5rem;
+    padding: 10px 20px 10px 20px;
 }
-.overlay-inner .description{
+.overlay-inner .description {
     margin-top: 2rem;
     text-align: justify;
     font-size: 13px;
+    font-weight: initial;
 }
 
