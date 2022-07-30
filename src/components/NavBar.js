@@ -11,8 +11,8 @@ import style from '../App.css'
         <h1>Master<GoBook/></h1>
         </div>
       <div style={style} className='nav'>
-      <NavLink to={"/"} exact="true">Home</NavLink>
-      <NavLink to={"/search"} exact="true">Search</NavLink>
+      <NavLink to={"/"} exact="true" className="link">Home</NavLink>
+      <NavLink to={"/search"} exact="true" className="link">Search</NavLink>
       </div>
       </div>
        )
