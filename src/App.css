@@ -124,6 +124,14 @@ a.view {
     padding: 10px;
     border-radius: 7px;
 }
+
+button.openModalBtn {
+    padding: 10px 30px 10px 30px;
+    background: bisque;
+    border: none;
+    border-radius: 7px;
+}
+
 .overlay{
     min-height: 100vh;
     width: 100%;
